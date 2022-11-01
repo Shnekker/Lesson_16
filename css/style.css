@@ -214,6 +214,9 @@ body {
   transition: all 1s ease 0s;
 }
 
+.info-contacts__items a {
+  display: inline-block;
+}
 .info-contacts__items:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -267,6 +270,9 @@ body {
   line-height: 1.5;
   color: #1E212C;
   padding-left: 36px;
+}
+.info-contacts__item:hover {
+  text-decoration: underline;
 }
 
 .partners-body__text {
@@ -341,6 +347,7 @@ body {
   display: inline-block;
   line-height: 160%;
   color: #424551;
+  cursor: pointer;
 }
 .item__label:not(:last-child) {
   margin-bottom: 8px;
@@ -349,7 +356,7 @@ body {
   border: 1px solid #D7DADD;
   border-radius: 4px;
   width: 332px;
-  height: 52px;
+  min-height: 52px;
   padding-left: 16px;
 }
 .item__input:focus {
@@ -371,7 +378,8 @@ body {
 }
 .item__input--message {
   width: 100%;
-  height: 128px;
+  min-height: 128px;
+  max-height: 350px;
   padding-top: 13px;
   resize: vertical;
 }
